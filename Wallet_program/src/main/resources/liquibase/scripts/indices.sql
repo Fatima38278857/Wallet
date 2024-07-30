@@ -1,5 +1,6 @@
 -- liquibase formatted sql
 
+
 -- changeset dlatyshev:1
 CREATE TABLE wallet (
     id BIGINT PRIMARY KEY  NOT NULL,

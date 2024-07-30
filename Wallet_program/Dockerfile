@@ -4,6 +4,7 @@ COPY pom.xml .
 COPY src ./src
 RUN mvn clean package -DskipTests
 
+
 FROM openjdk:17-jdk-slim
 ENV PORT=8080
 EXPOSE $PORT

@@ -15,6 +15,7 @@ public class WalletController {
     @Autowired
     private WalletService walletService;
 
+
     @PostMapping("/operateWallet")
     public ResponseEntity<Wallet> operateWallet(@RequestBody @Validated WalletDto request) {
         Wallet updatedWallet = walletService.updateBalance(request);

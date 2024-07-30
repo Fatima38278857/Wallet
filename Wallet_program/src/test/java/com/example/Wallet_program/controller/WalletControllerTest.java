@@ -64,6 +64,7 @@ class WalletControllerTest {
                         MockMvcRequestBuilders.post("/wallet/operateWallet")
                                 .contentType(MediaType.APPLICATION_JSON)
                                 .content(objectMapper.writeValueAsString(walletDto))
+
                 )
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.walletId", is(wallet.getWalletId().intValue())))
